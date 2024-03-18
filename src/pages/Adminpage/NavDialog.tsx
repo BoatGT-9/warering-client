@@ -5,9 +5,8 @@ import DialogContentText from "@mui/material/DialogContentText";
 import Slide from "@mui/material/Slide";
 import { TransitionProps } from "@mui/material/transitions";
 import { NavLink } from "react-router-dom";
-import { PiNotebookBold } from "react-icons/pi";
-import { VscGraph } from "react-icons/vsc";
-import { FiCpu } from "react-icons/fi";
+import { PiUserList } from "react-icons/pi";
+import { CiLogout } from "react-icons/ci";
 
 const Transition = React.forwardRef(function Transition(
   props: TransitionProps & {
@@ -63,8 +62,32 @@ export default function SmallNavLinks(props: INavDialog) {
                 }`
               }
             >
-              <FiCpu className="mr-3 text-[16px]" />
-              
+              <div className=" bg-red-700 rounded-xl items-center">
+                <NavLink className="flex pl-10 p-5 items-center text-[14px]  ">
+                  <span className=" flex mr-3 text-[13px]  text-white">
+                    <PiUserList className="flex mr-3 text-[20px]  " />
+                    UserList
+                  </span>
+                </NavLink>
+              </div>
+              <div className="absolute mt-[35cm]   ">
+                <button className="flex pl-10 p-5 items-center"> 
+                <CiLogout className="mr-3 text-[16px]"/>
+                Log Out</button>
+              </div>
+              {/* <FiCpu className="mr-3 text-[16px]" /> */}
+              {/* <div className=" flex items-center logout  ">
+                <button
+                  key={6}
+                  onClick={() => {
+                    signOut();
+                  }}
+                  className="flex  pl-10 p-5 items-center text-[13px] text-[#962e39]"
+                >
+                  <CiLogout className="mr-3 text-[16px]" />
+                  Logout
+                </button>
+              </div> */}
             </NavLink>
           </DialogContentText>
         </DialogContent>

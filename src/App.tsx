@@ -16,24 +16,26 @@ import Device from "./pages/Device/Device";
 import AddDevice from "./pages/AddDevice";
 import Account from "./pages/Account";
 import EditProfile from "./pages/EditProfile";
+import Admin from "./pages/Adminpage";
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/home" element={<Landing />} />
+        {/* <Route path="/home" element={<Landing />} />
         <Route path="/reset-password/:token" element={<ResetPass />} />
-        <Route path="/term-condition" element={<TermAndCondition />} />
-        <Route element={<RequireUser />}>
-          <Route path="/" element={<Overview />} />
+        <Route path="/term-condition" element={<TermAndCondition />} /> */}
+        {/* <Route element={<RequireUser />}> */}
+           <Route path="/" element={<Overview />} />
           <Route path="/dashboard-list" element={<DashboardList />} />
           <Route path="/dashboard/:dashboard_id" element={<Dashboard />} />
           <Route path="/add-dashboard" element={<AddDashboard />} />
-          <Route path="/device-list" element={<DeviceList />} />
+          <Route path="/device-list" element={<DeviceList />} />  
           <Route path="/device/:device_id" element={<Device />} />
           <Route path="/add-device" element={<AddDevice />} />
           <Route path="/account" element={<Account />} />
-          <Route path="/edit-profile" element={<EditProfile />} />
-        </Route>
+          <Route path="/edit-profile" element={<EditProfile />} /> 
+          <Route path="/Admin" element={<Admin/>} />
+        {/* </Route> */}
         <Route element={<RequireAdmin />}>
           <Route path="/admin" element={<AdminDashboard />} />
         </Route>

@@ -91,6 +91,15 @@ table th {
         top: 90px !important;
       }
 
+.logout{
+      display: flex;
+      margin-top: 14cm;
+      /* margin: 100px; */
+}
+.td{
+  justify-content: center;
+}
+
 @media screen and (min-width:0px) and (max-width:600px) {
     table tr:nth-child(even){background-color: "#000";}
 }

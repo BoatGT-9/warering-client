@@ -18,7 +18,7 @@ function BigNavbar(props: IProps) {
         WR
       </button>
       <div className=" flex items-center pr-[3rem] sm:pr-2">
-        <div className="text-[14.5px] sm:hidden">Kuttapat Somwang</div>
+        <div className="text-[14.5px] sm:hidden">Admin </div>
         <img
           src={
             "https://www.wilsoncenter.org/sites/default/files/media/images/person/james-person-1.jpg"
